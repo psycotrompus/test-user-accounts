@@ -1,6 +1,5 @@
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 import static java.util.Arrays.asList;
 
@@ -34,9 +33,9 @@ public class Main {
       userInput = input.next("[IOio]+");
       if (userInput.equalsIgnoreCase("I")) {
         System.out.print("Type your username then press 'Enter' key: ");
-        username = input.nextLine();
+        username = input.next();
         System.out.print("Type your password then press 'Enter' key: ");
-        password = input.nextLine();
+        password = input.next();
         UserAccount userAccount = lookupUser(username);
         // TODO Perform the rest of the operations.
       }
